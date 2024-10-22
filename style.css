@@ -1,21 +1,43 @@
+/* General styles */
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+/* Button styles */
 .button {
   border-radius: 8px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
-button#apple {
+button#apple-button {
   background-color: #ba1a62;
 }
+
+/* Additional button colors */
 button#banana {
   background-color: #c8cd7d;
 }
+
 button#mango {
   background-color: #e4633b;
 }
+
 button#orange {
-  background-color: #ffa500;
+  background-color: #ffb84d; /* A new color for orange */
 }
 
+/* Select dropdown styling */
+.select {
+  margin-top: 0; /* No top margin for seamless look */
+  display: inline-block; /* Makes the dropdown sit inline with the button */
+}
+
+/* Shopping cart styles */
 #shopping-cart {
   background-color: #e1ebe4;
   max-width: 600px;
@@ -23,4 +45,36 @@ button#orange {
   border-radius: 20px;
   margin: 20px auto;
   padding: 20px;
+  position: relative;
+}
+
+/* Cart item styling */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  background-color: transparent;
+  border: none;
+  color: red; /* Color for the remove button */
+  cursor: pointer;
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for the total and item count */
+h4 {
+  font-weight: bold;
+}
+
+/* Clear cart button styling */
+#clear-cart {
+  margin-top: 20px;
+}
+
+/* Hidden class to manage dropdown visibility */
+.is-hidden {
+  display: none; /* Hides the dropdown by default */
 }

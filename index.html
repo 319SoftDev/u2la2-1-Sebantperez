@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Shopping Cart - QuerySelector Lesson</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - E-Foods</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <script src="script.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container content has-text-centered">
-      <section class="section">
-        <h1 class="title">Welcome to E-Foods</h1>
-        <p>Click an item to add it to your cart.</p>
-        <div id="button-group" class="columns">
-          <div class="column">
-            <button class="button" id="apple">🍎 Apple: $0.75</button>
-          </div>
-          <div class="column">
-            <button class="button" id="banana">🍌 Banana: $0.30</button>
-          </div>
-          <div class="column">
-            <button class="button" id="mango">🥭 Mango: $1.25</button>
-          </div>
-          <div class="column">
-            <button class="button" id="orange">🍊 Orange: $0.50</button>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <h3>Your Items:</h3>
-        <div id="shopping-cart"></div>
-        <h4>Your total: $<span id="total-span">0</span></h4>
-        <button class="button is-danger" id="clear-cart">Clear Cart</button>
-      </section>
+        <section class="section">
+            <h1 class="title">Welcome to E-Foods</h1>
+            <p>Click an item to add it to your cart.</p>
+            <div id="button-group" class="columns is-centered">
+                <div class="column is-narrow">
+                    <button class="button" id="apple-button">🍎 Apple: $0.75</button>
+                    <div class="select is-hidden" id="apple-dropdown-container">
+                        <select id="apple-dropdown">
+                            <option value="apple">Apple</option>
+                            <option value="granny-smith">Granny Smith</option>
+                            <option value="fuji">Fuji</option>
+                            <option value="honeycrisp">Honeycrisp</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column is-narrow">
+                    <button class="button" id="banana">🍌 Banana: $0.30</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="button" id="mango">🥭 Mango: $1.25</button>
+                </div>
+                <div class="column is-narrow">
+                    <button class="button" id="orange">🍊 Orange: $0.50</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h3>Your Items:</h3>
+            <div id="shopping-cart"></div>
+            <h4>Your total: $<span id="total-span">0</span></h4>
+            <h4>Total items: <span id="item-count">0</span></h4>
+            <button class="button" id="clear-cart">Clear Cart</button>
+        </section>
     </div>
-  </body>
+</body>
 </html>
