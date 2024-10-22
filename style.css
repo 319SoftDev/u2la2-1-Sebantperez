@@ -12,6 +12,9 @@ button#banana {
 button#mango {
   background-color: #e4633b;
 }
+button#orange {
+  background-color: #ffa500;
+}
 
 #shopping-cart {
   background-color: #e1ebe4;
